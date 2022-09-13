@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "simran";
-$password = "root";
+$username = "root";
+$password = "";
 $dbname = "e_learning";
 
 $conn = new mysqli($servername,$username,$password,$dbname);
@@ -10,4 +10,3 @@ $conn = new mysqli($servername,$username,$password,$dbname);
 // {
 //     echo "Database Connection Successful.";
 // }
-?>

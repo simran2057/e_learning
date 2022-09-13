@@ -1,7 +1,7 @@
  <?php
- session_start();
- 
- ?>
+    echo $_SESSION['name']
+
+    ?>
  <!-- Sidebar -->
  <ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
 
@@ -29,7 +29,7 @@
 
              <button class="menu-btn  flex flex-wrap items-center  justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
                  <div class="rounded-full">
-                 <i class="fas fa-fw fa-user"></i>
+                     <i class="fas fa-fw fa-user"></i>
                  </div>
 
                  <div class="ml-2 capitalize flex ">
@@ -43,31 +43,31 @@
 
                  <!-- item -->
                  <a class="px-4 py-2 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 ease-in-out" href="createuser.php">
-                    Create User
-                     
+                     Create User
+
                  </a>
                  <!-- end item -->
 
                  <hr>
-                  <!-- item -->
-                  <a class="px-4 py-2 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 ease-in-out" href="createstudents.php">
-                    Create Student
-                     
+                 <!-- item -->
+                 <a class="px-4 py-2 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 ease-in-out" href="createstudents.php">
+                     Create Student
+
                  </a>
                  <!-- end item -->
 
                  <hr>
                  <!-- item -->
                  <a class="px-4 py-2 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 ease-in-out" href="createteachers.php">
-                    Create Teacher
-                     
+                     Create Teacher
+
                  </a>
                  <!-- end item -->
 
                  <hr>
                  <!-- item -->
                  <a class="px-4 py-2 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 ease-in-out" href="manageuser.php">
-                   Manage User
+                     Manage User
                  </a>
                  <!-- end item -->
 
@@ -75,13 +75,13 @@
          </div>
      </li>
 
-      <!-- Nav Item - Utilities Collapse Menu -->
-      <li>
+     <!-- Nav Item - Utilities Collapse Menu -->
+     <li>
          <div class="dropdown mt-2 relative md:static">
 
              <button class="menu-btn  flex flex-wrap items-center  justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
                  <div class="rounded-full">
-                 <i class="fas fa-fw fa-book"></i>
+                     <i class="fas fa-fw fa-book"></i>
                  </div>
 
                  <div class="ml-2 capitalize flex ">
@@ -95,8 +95,8 @@
 
                  <!-- item -->
                  <a class="px-4 py-2 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 ease-in-out" href="createsubjects.php">
-                    Create Subject
-                     
+                     Create Subject
+
                  </a>
                  <!-- end item -->
 
@@ -104,7 +104,7 @@
 
                  <!-- item -->
                  <a class="px-4 py-2 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 ease-in-out" href="managesubjects.php">
-                   Manage Subject
+                     Manage Subject
                  </a>
                  <!-- end item -->
 
@@ -118,7 +118,7 @@
 
              <button class="menu-btn  flex flex-wrap items-center  justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
                  <div class="rounded-full">
-                 <i class="fad fa-cheese-swiss text-xs mr-2"></i>
+                     <i class="fad fa-cheese-swiss text-xs mr-2"></i>
                  </div>
 
                  <div class="ml-2 capitalize flex ">
@@ -132,8 +132,8 @@
 
                  <!-- item -->
                  <a class="px-4 py-2 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 ease-in-out" href="createsiteconfig.php">
-                    Create SiteConfig
-                     
+                     Create SiteConfig
+
                  </a>
                  <!-- end item -->
 
@@ -141,7 +141,7 @@
 
                  <!-- item -->
                  <a class="px-4 py-2 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 ease-in-out" href="managesiteconfig.php">
-                   Manage SiteConfig
+                     Manage SiteConfig
                  </a>
                  <!-- end item -->
 
@@ -149,13 +149,13 @@
          </div>
      </li>
 
-      <!-- Nav Item - Utilities Collapse Menu -->
-      <li>
+     <!-- Nav Item - Utilities Collapse Menu -->
+     <li>
          <div class="dropdown mt-2 relative md:static">
 
              <button class="menu-btn  flex flex-wrap items-center  justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
                  <div class="rounded-full">
-                 <i class="fas fa-fw fa-phone"></i>
+                     <i class="fas fa-fw fa-phone"></i>
                  </div>
 
                  <div class="ml-2 capitalize flex ">
@@ -169,7 +169,7 @@
 
                  <!-- item -->
                  <a class="px-4 py-2 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 ease-in-out" href="managecontact.php">
-                   View Contacts
+                     View Contacts
                  </a>
                  <!-- end item -->
 
@@ -184,7 +184,7 @@
 
              <button class="menu-btn  flex flex-wrap items-center  justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
                  <div class="rounded-full">
-                 <i class="fas fa-fw fa-file"></i>
+                     <i class="fas fa-fw fa-file"></i>
                  </div>
 
                  <div class="ml-2 capitalize flex ">
@@ -198,8 +198,8 @@
 
                  <!-- item -->
                  <a class="px-4 py-2 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 ease-in-out" href="createfile.php">
-                    Create File
-                     
+                     Create File
+
                  </a>
                  <!-- end item -->
 
@@ -207,7 +207,7 @@
 
                  <!-- item -->
                  <a class="px-4 py-2 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 ease-in-out" href="managefile.php">
-                   Manage File
+                     Manage File
                  </a>
                  <!-- end item -->
 
@@ -215,13 +215,13 @@
          </div>
      </li>
 
-      <!-- Nav Item - Utilities Collapse Menu -->
-      <li>
+     <!-- Nav Item - Utilities Collapse Menu -->
+     <li>
          <div class="dropdown mt-2 relative md:static">
 
              <button class="menu-btn  flex flex-wrap items-center  justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
                  <div class="rounded-full">
-                 <i class="fas fa-fw fa-file"></i>
+                     <i class="fas fa-fw fa-file"></i>
                  </div>
 
                  <div class="ml-2 capitalize flex ">
@@ -235,7 +235,7 @@
 
                  <!-- item -->
                  <a class="px-4 py-2 block capitalize font-medium text-sm tracking-wide bg-white hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 ease-in-out" href="editprofile.php">
-                   Edit Profile
+                     Edit Profile
                  </a>
                  <!-- end item -->
 

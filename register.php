@@ -38,6 +38,8 @@
                         $result = mysqli_query($conn, $create_query);
                         echo $result;
                         if ($result) {
+                            $_SESSION['name'] = $name;
+                            $_SESSION['email'] = $email;
                 ?>
                             <meta http-equiv="refresh" content="0; URL=admindashboard.php?msg=csuccess" />
                         <?php
@@ -47,7 +49,7 @@
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
-                                <strong>User couldn't be created successfully.</strong>
+                                <strong>User couldn't be created.</strong>
                             </div>
 
                             <script>
@@ -161,17 +163,17 @@
 @require("inc/footpart.php");
 ?>
 <script>
-    var password = document.getElementById("password")
-  , confirm_password = document.getElementById("confirm_password");
+    var password = document.getElementById("password"),
+        confirm_password = document.getElementById("confirm_password");
 
-function validatePassword(){
-  if(password.value != confirm_password.value) {
-    confirm_password.setCustomValidity("Passwords Don't Match");
-  } else {
-    confirm_password.setCustomValidity('');
-  }
-}
+    function validatePassword() {
+        if (password.value != confirm_password.value) {
+            confirm_password.setCustomValidity("Passwords Don't Match");
+        } else {
+            confirm_password.setCustomValidity('');
+        }
+    }
 
-password.onchange = validatePassword;
-confirm_password.onkeyup = validatePassword;
+    password.onchange = validatePassword;
+    confirm_password.onkeyup = validatePassword;
 </script>
