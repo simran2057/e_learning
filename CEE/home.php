@@ -1,0 +1,51 @@
+
+
+<!-- MAO NI ANG HEADER -->
+<?php require("includes/header.php"); ?>      
+
+<!-- UI THEME DIRI -->
+<?php require("includes/ui-theme.php"); ?>
+
+<div class="app-main">
+<!-- sidebar diri  -->
+<?php require("includes/sidebar.php"); ?>
+
+
+
+<!-- Condition If unza nga page gi click -->
+<?php 
+   @$page = $_GET['page'];
+
+
+   if($page != '')
+   {
+     if($page == "exam")
+     {
+       include("pages/exam.php");
+     }
+     else if($page == "result")
+     {
+       include("pages/result.php");
+     }
+     else if($page == "myscores")
+     {
+       include("pages/myscores.php");
+     }
+     
+   }
+   // Else ang home nga page mo display
+   else
+   {
+     include("pages/home.php"); 
+   }
+
+
+ ?> 
+
+
+<!-- MAO NI IYA FOOTER -->
+<?php include("includes/footer.php"); ?>
+
+<?php include("includes/modals.php"); ?>
+
+
