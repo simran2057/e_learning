@@ -16,6 +16,7 @@ if(isset($_POST['login'])) {
         $row=mysqli_fetch_assoc($result);
         $_SESSION['email']= $row['email'];
         $_SESSION['name']= $row['name'];
+        $_SESSION['role']="admin";
         echo header("Location: ../admindashboard.php");
     }
     // }
@@ -39,4 +40,3 @@ if(isset($_POST['login'])) {
     }
 
 }
-?>

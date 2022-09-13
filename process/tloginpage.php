@@ -14,6 +14,8 @@ if(isset($_POST['login'])) {
         $_SESSION['email']= $row['email'];
         $_SESSION['name']= $row['name'];
         $_SESSION['id']= $row['id'];
+        $_SESSION['role']="teacher";
+
         echo header("Location: ../teachers/tdashboard.php");
     }
     else 
@@ -22,6 +24,3 @@ if(isset($_POST['login'])) {
     }
 
 }
-
-
-?>

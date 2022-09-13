@@ -1,6 +1,6 @@
 <?php
 session_start();
-$userid= $_SESSION['id'];
+$userid = $_SESSION['id'];
 require("../connection/config.php");
 
 ?>
@@ -20,33 +20,34 @@ require("../connection/config.php");
 </head>
 
 <body class="bg-gray-200">
-    
 
 
-<?php
-require('inc/navbar.php')
-?>
 
-<!-- strat wrapper -->
-<div class=" flex flex-row flex-wrap p-4  ">
   <?php
-  require('inc/sidebar.php')
+  require('inc/navbar.php')
   ?>
 
-<div class=" flex-1 p-6 md:mt-16"> 
+  <!-- strat wrapper -->
+  <div class=" flex flex-row flex-wrap p-4  ">
+    <?php
+    require('inc/sidebar.php')
+    ?>
 
-  
-<?php 
-@include('news.php');
-?>
+    <div class=" flex-1 p-6 md:mt-16">
 
-    
 
-</div>
+      <?php
+      @include('news.php');
+      ?>
 
-  <!-- end content -->
 
-</div>
-<!-- end wrapper -->
+
+    </div>
+
+    <!-- end content -->
+
+  </div>
+  <!-- end wrapper -->
 </body>
+
 </html>
